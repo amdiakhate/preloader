@@ -17,4 +17,5 @@ COPY start.sh /start.sh
 RUN chmod +x /start.sh
 
 # Run the start script when the container launches
-ENTRYPOINT ["/start.sh"]
+ENTRYPOINT ["/bin/bash", "/start.sh"]
+

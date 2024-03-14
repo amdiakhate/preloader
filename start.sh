@@ -4,4 +4,4 @@
 touch /tmp/healthy
 
 # Execute the Python script
-exec python preloader.py
+python preloader.py
