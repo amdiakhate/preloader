@@ -41,12 +41,13 @@ Configure the script using environment variables, through a `.env` file, or Dock
 
 Example `.env` file:
 
+```
 API_URL=http://localhost:8300/api/categories/listing?per_page=100
 API_CUSTOM_HEADERS=X-Channel=front_fr,X-Locale=fr
 FRONTEND_CUSTOM_HEADERS=X-Channel=front_fr,X-Locale=fr
 PRELOAD_INTERVAL=15
 DISABLE_TQDM=False
-
+```
 
 For Docker, specify these variables in your `Dockerfile` or `docker-compose.yml`.
 
