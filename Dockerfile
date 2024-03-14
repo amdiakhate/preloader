@@ -10,12 +10,11 @@ COPY . /app
 # Install any needed packages specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Make port 80 available to the world outside this container
-# Only necessary if your script runs a web server
-# EXPOSE 80
+# Copy the start script into the container
+COPY start.sh /start.sh
 
-# Define environment variable
-ENV NAME Preloader
+# Make the start script executable
+RUN chmod +x /start.sh
 
-# Run preloader.py when the container launches
-CMD ["python", "preloader.py"]
+# Run the start script when the container launches
+ENTRYPOINT ["/start.sh"]
