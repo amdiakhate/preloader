@@ -25,6 +25,7 @@ The Versatile Preloader Script efficiently preloads web pages into cache by fetc
 1. Clone the repository: `git clone https://github.com/amdiakhate/preloader.git`
 2. Install required dependencies: `pip install -r requirements.txt`
 
+
 ### Docker Installation
 
 1. Build Docker image: `docker build -t versatile-preloader .`
